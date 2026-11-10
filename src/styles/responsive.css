@@ -1,0 +1,39 @@
+@media (max-width: 1023px) {
+  .card { padding: 20px; }
+  .grid { gap: 12px; }
+  .hero-top { flex-direction: column-reverse; align-items: flex-start; }
+  .hero-art { width: 120px; }
+  h1 { font-size: 1.8rem; }
+  .nav-link { padding: 8px 11px; }
+}
+/* Phones: nav at the bottom, IO top-right, tight grid; inactive cards fade and are struck through */
+@media (max-width: 767px) {
+  .page { padding: calc(66px + env(safe-area-inset-top, 0px)) max(14px, env(safe-area-inset-right, 0px)) 8px max(14px, env(safe-area-inset-left, 0px)); }
+  .grid { grid-template-columns: minmax(0, 1fr); gap: 6px; }
+  .float-nav { top: auto; bottom: calc(12px + env(safe-area-inset-bottom, 0px)); width: calc(100% - 24px); max-width: 520px; padding: 4px; gap: 4px; }
+  .nav-links { flex: 1; min-width: 0; justify-content: space-between; }
+  .nav-link { padding: 8px 6px; font-size: .72rem; }
+  .theme-toggle { width: 32px; height: 32px; }
+  .corner-logo { top: calc(12px + env(safe-area-inset-top, 0px)); right: max(14px, env(safe-area-inset-right, 0px)); width: 40px; height: 40px; font-size: .78rem; }
+  .card { padding: 16px; }
+  .stack-col { gap: 12px; }
+  .hero-top { flex-direction: column; align-items: flex-start; }
+  .hero-art { order: 1; width: 112px; } .hero-copy { order: 2; }
+  .ticker { height: 320px; }
+  .footer { padding: 8px 14px calc(88px + env(safe-area-inset-bottom, 0px)); }
+  .footer-inner { justify-content: center; text-align: center; }
+
+  .slot[data-active='false'] { cursor: pointer; }
+  .slot[data-active='false'] .card { opacity: .42; pointer-events: none; }
+  .slot[data-active='false'] :is(h1, h2, h3, p, a, span, li, button, .chip, .badge, .date-badge, input, textarea) { text-decoration: line-through; text-decoration-thickness: 1px; }
+  .slot[data-active='true'] .card { opacity: 1; }
+}
+@media (max-width: 360px) { .nav-link { padding: 7px 4px; font-size: .66rem; } }
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { transition-duration: .01ms !important; animation-duration: .01ms !important; scroll-behavior: auto !important; }
+  /* the rainbow keeps a very slow drift; the ticker becomes a normal scrollable list */
+  .rainbow-orb::before, .rainbow-orb::after { animation-duration: 70s !important; animation-iteration-count: infinite !important; }
+  .ticker-track { animation: none !important; }
+  .ticker-track > :nth-child(2) { display: none; }
+  .ticker { overflow-y: auto; -webkit-mask-image: none; mask-image: none; }
+}

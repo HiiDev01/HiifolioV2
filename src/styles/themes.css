@@ -1,0 +1,22 @@
+/* Carbon white (default) */
+:root, :root[data-theme='light'] {
+  --cf-base: #E3E5E8; --cf1: #D9DCE0; --cf2: #EEF0F2; --cf3: #E0E3E6; --cf4: #E5E8EB; --cf5: #DFE2E5; --cf6: #F0F2F4;
+  --card: #FFFFFF; --surface: #F3F4F6; --surface-2: #E8EAED;
+  --text: #14161A; --text-2: #5B616C; --muted: #9097A2;
+  --line: rgba(20, 22, 26, .10);
+  --btn: #14161A; --btn-text: #FFFFFF;
+  --art-a: #E1E4E8; --art-b: #B4BAC4; --art-fg: #FFFFFF;
+  --rainbow-opacity: .5; --rainbow-blend: multiply;
+  color-scheme: light;
+}
+/* Carbon black */
+:root[data-theme='dark'] {
+  --cf-base: #131313; --cf1: #151515; --cf2: #222222; --cf3: #1B1B1B; --cf4: #1D1D1D; --cf5: #1A1A1A; --cf6: #242424;
+  --card: #0C0D0F; --surface: #17191C; --surface-2: #202328;
+  --text: #F2F3F5; --text-2: #B0B4BC; --muted: #767B85;
+  --line: rgba(255, 255, 255, .08);
+  --btn: #F2F3F5; --btn-text: #0C0D0F;
+  --art-a: #1F2227; --art-b: #3A3F48; --art-fg: #C9CFD8;
+  --rainbow-opacity: .42; --rainbow-blend: screen;
+  color-scheme: dark;
+}

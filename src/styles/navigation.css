@@ -1,0 +1,16 @@
+.float-nav { position: fixed; z-index: 100; left: 50%; transform: translateX(-50%); top: calc(18px + env(safe-area-inset-top, 0px));
+  display: flex; align-items: center; gap: 6px; padding: 5px; max-width: calc(100% - 24px);
+  background: var(--card); border-radius: 6px; transition: background-color .3s; }
+.nav-links { display: flex; gap: 2px; overflow-x: auto; scrollbar-width: none; -ms-overflow-style: none; }
+.nav-links::-webkit-scrollbar { display: none; }
+.nav-link { border: 0; background: transparent; padding: 9px 14px; border-radius: 4px; font-size: .86rem; font-weight: 500; white-space: nowrap;
+  color: var(--text-2); text-decoration: line-through; text-decoration-thickness: 1px; transition: background-color .2s, color .2s; }
+.nav-link:hover { background: var(--surface); color: var(--text); }
+.nav-link.is-active { background: var(--btn); color: var(--btn-text); font-weight: 700; text-decoration: none; }
+.theme-toggle { flex: none; display: grid; place-items: center; width: 36px; height: 36px; border: 0; border-radius: 4px; background: var(--surface); transition: background-color .2s; }
+.theme-toggle:hover { background: var(--surface-2); }
+/* IO: fixed top-right, outside the nav */
+.corner-logo { position: fixed; z-index: 100; top: calc(18px + env(safe-area-inset-top, 0px)); right: max(18px, env(safe-area-inset-right, 0px));
+  display: grid; place-items: center; width: 46px; height: 46px; border: 0; border-radius: 6px; background: var(--card);
+  font-family: 'Geist Mono', ui-monospace, monospace; font-weight: 600; font-size: .85rem; letter-spacing: .04em; transition: background-color .2s; }
+.corner-logo:hover { background: var(--surface-2); }
