@@ -1,4 +1,8 @@
 // All personal details live here.
+import pj1 from './assets/images/pj1.png';
+import pj2 from './assets/images/pj2.png';
+
+
 export const config = {
   name: 'Isaac Olatimehin',
   initials: 'IO',
@@ -12,6 +16,7 @@ export const config = {
   projects: [
       {
     name: 'Konnekt NG',
+    image: pj2,
     description: 'A full-stack e-commerce platform featuring product browsing, shopping cart, user authentication, and secure Paystack payments, built with React.js, Node.js, Express.js, and Supabase.',
     tech: [
       'React.js',
@@ -23,12 +28,13 @@ export const config = {
       'Git'
     ],
     demo: 'https://konnektng.vercel.app/',
-    repo: '#',
+    repo: 'https://github.com/HiiDev01/konnektng',
     tone: 0
   },
 
   {
   name: 'Taperly',
+  image: pj1,
   description: 'A full stack link management platform that allows users to create personalized profile pages, organize, manage, and share multiple links through a single customizable page.',
   tech: [
     'React.js',
@@ -40,12 +46,14 @@ export const config = {
     'Vanilla CSS',
     'Git'
   ],
-    demo: '#',
-    repo: '#',
+    demo: 'https://taperly-sigma.vercel.app/',
+    repo: 'https://github.com/HiiDev01/Linkpage',
     tone: 1
   },
 
-    { name: 'MenuSnap', description: 'A digital restaurant menu platform that allows restaurants to create QR-code menus and update products instantly.', tech: ['React.js', 'Node.js', 'Supabase'], demo: '#', repo: '#', tone: 3 },
+  { name: 'MenuSnap', image: '/images/projects/menusnap.png', description: 'A digital restaurant menu platform that allows restaurants to create QR-code menus and update products instantly.', tech: ['React.js', 'Node.js', 'Supabase'], demo: '#', repo: '#', tone: 3 },
+
+
   ],
   skills: ['Node.js', 'Next.js', 'JavaScript', 'React.js', 'Git', 'Tailwind CSS', 'MongoDB', 'Supabase', 'MySQL', 'Video Editing', 'Content Creator', 'Teamwork'],
   about: {
@@ -61,13 +69,13 @@ export const config = {
     ],
   },
   socials: [
-    { label: 'GitHub', icon: 'github', url: 'https://github.com/your-handle' },
-    { label: 'LinkedIn', icon: 'linkedin', url: 'https://www.linkedin.com/in/your-handle' },
-    { label: 'X', icon: 'twitter', url: 'https://x.com/your-handle' },
+    { label: 'GitHub', icon: 'github', url: 'https://github.com/HiiDev01' },
+    { label: 'LinkedIn', icon: 'linkedin', url: 'https://www.linkedin.com/in/isaac-olatimehin-b23427260' },
+    { label: 'X', icon: 'twitter', url: 'https://x.com/realhisaacbrown?s=11' },
     { label: 'Instagram', icon: 'instagram', url: 'https://instagram.com/your-handle' },
-    { label: 'Email', icon: 'mail', url: 'mailto:hello@lonewolf.dev' },
+    { label: 'Email', icon: 'mail', url: 'mailto:isaacolatimehin@gmail.com' },
   ],
-  allProjectsUrl: 'https://github.com/your-handle?tab=repositories',
+  allProjectsUrl: 'https://github.com/HiiDev01',
   resumeUrl: '/cv/lone-wolf-cv.pdf',
   experience: [
     { role: 'Full Stack Developer', org: 'Freelance', period: '2022 – Present', text: 'Built and maintained web applications, implemented frontend interfaces, developed backend services, and integrated APIs and databases.' },

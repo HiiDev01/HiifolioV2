@@ -46,3 +46,34 @@ ul, ol { list-style: none; margin: 0; padding: 0; }
 .rainbow-orb::after { --d: max(46vmin, 300px); width: var(--d); height: var(--d); left: calc(var(--d) / -2); top: calc(var(--d) / -2);
   background: conic-gradient(from 180deg, hsl(38 92% 64%), hsl(68 85% 62%), hsl(140 68% 56%), hsl(185 80% 58%), hsl(222 86% 66%), hsl(268 78% 68%), hsl(312 70% 66%), hsl(38 92% 64%)); animation: orb-spin 26s linear infinite reverse; }
 @keyframes orb-spin { to { transform: rotate(360deg); } }
+
+.vs-shot {
+  width: 100%;
+    height: 300px; 
+  overflow: hidden;
+  background: var(--surface);
+}
+
+.vs-shot img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  object-position: top center;
+  transition: transform 0.4s ease;
+}
+
+.vs:hover .vs-shot img {
+  transform: scale(1.04);
+}
+
+.vs-heading {
+  padding: 18px 20px 4px;
+}
+
+.vs-heading h3 {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--ink);
+}

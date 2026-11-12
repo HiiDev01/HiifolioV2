@@ -15,8 +15,19 @@
 .stack { display: flex; flex-wrap: wrap; gap: 6px; }
 /* projects: code files in four VS Code themes */
 .projects-grid { display: grid; grid-template-columns: minmax(0, 1fr); gap: 12px; }
-.vs { display: flex; flex-direction: column; overflow: hidden; border-radius: 4px; background: var(--vs-bg); color: var(--vs-fg);
-  font-family: 'Geist Mono', ui-monospace, 'SFMono-Regular', monospace; font-size: .76rem; line-height: 1.7; }
+.vs {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  min-height: 0;
+  overflow: hidden;
+  border-radius: 4px;
+  background: var(--vs-bg);
+  color: var(--vs-fg);
+  font-family: 'Geist Mono', ui-monospace, 'SFMono-Regular', monospace;
+  font-size: .76rem;
+  line-height: 1.7;
+}
 .vs-bar { display: flex; align-items: center; gap: 12px; padding: 6px 12px 0; background: var(--vs-bar); }
 .vs-dots { flex: none; width: 33px; height: 7px; background: radial-gradient(circle, var(--vs-cm) 3px, transparent 3.5px) 0 0 / 11px 7px repeat-x; }
 .vs-tab { padding: 5px 12px; border-radius: 3px 3px 0 0; background: var(--vs-bg); font-size: .72rem; }
