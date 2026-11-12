@@ -11,7 +11,7 @@ export const config = {
   linkedin: 'https://www.linkedin.com/in/isaac-olatimehin-b23427260',
   github: 'https://github.com/HiiDev01',
   intro:
-    'A Senior Software Engineer passionate about building scalable web applications, solving real-world problems and driving innovation.',
+    'A Full stack Web Developer passionate about building scalable web applications, solving real-world problems and driving innovation.',
   stack: ['JavaScript', 'React.js', 'Next.js', 'Node.js', 'Express.js', 'PostgreSQL', 'MongoDB', 'Supabase', 'GitHub'],
   projects: [
       {
