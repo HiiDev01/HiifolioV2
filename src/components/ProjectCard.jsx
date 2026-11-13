@@ -12,13 +12,15 @@ export default function ProjectCard({ project }) {
     <article className={`vs vs-${THEMES[tone % THEMES.length]}`}>
 
       {/* Project Image */}
-      <div className="vs-shot">
+      {image ? (
         <img
           src={image}
           alt={`${name} project preview`}
           loading="lazy"
-        />
-      </div>
+          className="vs-img"
+        /> ) : (
+        <div className="vs-shot" role="img" aria-lebel={`${name} screen placeholder`}> <span>{name}</span></div>
+      )}
 
       {/* Project Name */}
       <div className="vs-heading">
@@ -60,7 +62,7 @@ export default function ProjectCard({ project }) {
           <Tok c="prop">demo</Tok>
           <Tok c="pun">:</Tok>{' '}
           <a href={demo} target="_blank" rel="noreferrer">
-            “live demo”
+            “view live demo”
           </a>
           <Tok c="pun">,</Tok>
         </p>
@@ -69,7 +71,7 @@ export default function ProjectCard({ project }) {
           <Tok c="prop">repo</Tok>
           <Tok c="pun">:</Tok>{' '}
           <a href={repo} target="_blank" rel="noreferrer">
-            “github”
+            “check github repo”
           </a>
           <Tok c="pun">,</Tok>
         </p>

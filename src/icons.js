@@ -1,6 +1,6 @@
 import { SiExpress, SiGit, SiGithub, SiJavascript, SiMongodb, SiMysql, SiNextdotjs, SiNodedotjs, SiPostgresql, SiReact, SiSupabase, SiTailwindcss } from 'react-icons/si';
-import { FaCameraRetro, FaFilm, FaPeopleGroup } from 'react-icons/fa6';
-import { FiGithub, FiInstagram, FiLinkedin, FiMail, FiTwitter } from 'react-icons/fi';
+import { FaCameraRetro, FaFilm, FaPeopleGroup, FaTiktok, FaSquareFacebook} from 'react-icons/fa6';
+import { FiGithub, FiInstagram, FiLinkedin, FiMail, FiTwitter, } from 'react-icons/fi';
 
 // name -> icon + brand colour (no colour = inherit text colour)
 export const TECH = {
@@ -21,4 +21,4 @@ export const TECH = {
   'Teamwork': { Icon: FaPeopleGroup },
 };
 
-export const SOCIAL_ICONS = { github: FiGithub, linkedin: FiLinkedin, twitter: FiTwitter, instagram: FiInstagram, mail: FiMail };
+export const SOCIAL_ICONS = { github: FiGithub, linkedin: FiLinkedin, twitter: FiTwitter, Facebook: FaSquareFacebook , mail: FiMail, tiktok: FaTiktok};

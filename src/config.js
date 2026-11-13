@@ -1,6 +1,7 @@
 // All personal details live here.
 import pj1 from './assets/images/pj1.png';
 import pj2 from './assets/images/pj2.png';
+import pj3 from './assets/images/pj3.png'
 
 
 export const config = {
@@ -51,7 +52,7 @@ export const config = {
     tone: 1
   },
 
-  { name: 'MenuSnap', image: '/images/projects/menusnap.png', description: 'A digital restaurant menu platform that allows restaurants to create QR-code menus and update products instantly.', tech: ['React.js', 'Node.js', 'Supabase'], demo: '#', repo: '#', tone: 3 },
+  { name: 'OTPDEN', image: pj3, description: 'A digital bill payment platform for paying utility bills, purchasing airtime and data, and managing transactions securely and conveniently.', tech: ['React.js', 'Node.js', 'Supabase', 'express', 'paystack', 'REST API'], demo: '#', repo: '#', tone: 3 },
 
 
   ],
@@ -72,7 +73,8 @@ export const config = {
     { label: 'GitHub', icon: 'github', url: 'https://github.com/HiiDev01' },
     { label: 'LinkedIn', icon: 'linkedin', url: 'https://www.linkedin.com/in/isaac-olatimehin-b23427260' },
     { label: 'X', icon: 'twitter', url: 'https://x.com/realhisaacbrown?s=11' },
-    { label: 'Instagram', icon: 'instagram', url: 'https://instagram.com/your-handle' },
+    { label: 'Tiktok', icon: 'tiktok', url: 'mailto:isaacolatimehin@gmail.com' },
+    { label: 'Facebook', icon: 'Facebook', url: 'https://instagram.com/your-handle' },
     { label: 'Email', icon: 'mail', url: 'mailto:isaacolatimehin@gmail.com' },
   ],
   allProjectsUrl: 'https://github.com/HiiDev01',

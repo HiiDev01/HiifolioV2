@@ -15,23 +15,12 @@
 .stack { display: flex; flex-wrap: wrap; gap: 6px; }
 /* projects: code files in four VS Code themes */
 .projects-grid { display: grid; grid-template-columns: minmax(0, 1fr); gap: 12px; }
-.vs {
-  display: flex;
-  flex-direction: column;
-  height: auto;
-  min-height: 0;
-  overflow: hidden;
-  border-radius: 4px;
-  background: var(--vs-bg);
-  color: var(--vs-fg);
-  font-family: 'Geist Mono', ui-monospace, 'SFMono-Regular', monospace;
-  font-size: .76rem;
-  line-height: 1.7;
-}
+.vs { display: flex; flex-direction: column; overflow:; border-radius: 4px; background: var(--vs-bg); color: var(--vs-fg);
+  font-family: 'Geist Mono', ui-monospace, 'SFMono-Regular', monospace; font-size: .76rem; line-height: 1.7; }
 .vs-bar { display: flex; align-items: center; gap: 12px; padding: 6px 12px 0; background: var(--vs-bar); }
 .vs-dots { flex: none; width: 33px; height: 7px; background: radial-gradient(circle, var(--vs-cm) 3px, transparent 3.5px) 0 0 / 11px 7px repeat-x; }
 .vs-tab { padding: 5px 12px; border-radius: 3px 3px 0 0; background: var(--vs-bg); font-size: .72rem; }
-.vs-shot { height: 76px; display: grid; place-items: center; overflow: hidden; background: color-mix(in srgb, var(--vs-kw) 20%, var(--vs-bg)); }
+.vs-shot { height: 300px; display: grid; place-items: center; overflow: hidden; flex: none; background: color-mix(in srgb, var(--vs-kw) 20%, var(--vs-bg)); }
 .vs-shot span { font-family: 'Geist', system-ui, sans-serif; font-weight: 700; font-size: 1.1rem; color: var(--vs-fn); transition: transform .5s ease; }
 .vs:hover .vs-shot span { transform: scale(1.1); }
 .vs-code { padding: 10px 14px 14px; }
@@ -39,6 +28,7 @@
 .vs-code .in { padding-left: 1.5em; }
 .vs-code a { color: var(--vs-str); text-decoration: underline; text-underline-offset: 3px; transition: opacity .2s; }
 .vs-code a:hover { opacity: .75; }
+.vs-img{display: block; width: 100%; height: 300px; flex: none; object-fit: cover;}
 .kw { color: var(--vs-kw); } .fn { color: var(--vs-fn); } .str { color: var(--vs-str); } .prop { color: var(--vs-prop); } .cm { color: var(--vs-cm); } .pun { color: var(--vs-pun); }
 .vs-dark    { --vs-bg: #1E1E1E; --vs-bar: #252526; --vs-fg: #D4D4D4; --vs-kw: #569CD6; --vs-fn: #DCDCAA; --vs-str: #CE9178; --vs-prop: #9CDCFE; --vs-cm: #6A9955; --vs-pun: #D4D4D4; }
 .vs-onedark { --vs-bg: #282C34; --vs-bar: #21252B; --vs-fg: #ABB2BF; --vs-kw: #C678DD; --vs-fn: #61AFEF; --vs-str: #98C379; --vs-prop: #E5C07B; --vs-cm: #5C6370; --vs-pun: #ABB2BF; }
@@ -66,8 +56,7 @@
 .about { display: flex; flex-direction: column; gap: 18px; }
 .about-head { display: flex; flex-direction: column; gap: 10px; }
 .about-sub { font-family: 'Geist Mono', ui-monospace, monospace; font-size: .72rem; font-weight: 500; text-transform: uppercase; letter-spacing: .1em; color: var(--muted); }
-#about { display: flex; flex-direction: column; max-height: 450px; } /* stays capped on phones too */
-#about .card-body { flex: 1; min-height: 0; overflow-y: auto; padding-right: 6px; scrollbar-width: thin; scrollbar-color: var(--line) transparent; }
+
 /* skills */
 .skills { display: grid; grid-template-columns: repeat(auto-fill, minmax(112px, 1fr)); gap: 8px; }
 .skill { display: flex; flex-direction: column; align-items: flex-start; gap: 12px; padding: 14px; border-radius: 4px; background: var(--surface); font-size: .84rem; font-weight: 500; transition: background-color .2s; }
